@@ -25,7 +25,7 @@ export default defineConfig({
     [
       'import',
       {
-        libraryName: '@iplat/sad-ui',
+        libraryName: 'sad-ui',
         libraryDirectory: '',
         customStyleName: (name) => path.resolve(__dirname, `src/${name}/style/index.ts`),
       },

@@ -25,7 +25,7 @@ const Alert: React.FC<AlertProps> = ({ children, kind = 'info', ...rest }) => (
         }}
         {...rest}
     >
-        {children}
+        SAD - {children}
     </div>
 );
 
