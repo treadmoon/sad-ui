@@ -3,6 +3,7 @@ import t from 'prop-types';
 
 export interface AlertProps {
     kind?: 'info' | 'positive' | 'negative' | 'warning';
+    children: React.ReactNode
 }
 
 export type KindMap = Record<Required<AlertProps>['kind'], string>;
