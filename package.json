@@ -6,7 +6,6 @@
   "typings": "lib/index.d.ts",
   "module": "esm/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "commit": "git-cz",
     "dev": "dumi dev",
     "build:types": "tsc -p tsconfig.build.json && cpr lib esm",
