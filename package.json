@@ -14,7 +14,11 @@
     "preview:site": "cross-env SITE_BUILD_ENV=PREVIEW npm run build:site && serve doc-site",
     "deploy:site": "npm run build:site && gh-pages -d doc-site",
     "clean": "rimraf lib esm dist",
-    "build": "npm run clean && npm run build:types && gulp"
+    "build": "npm run clean && npm run build:types && gulp",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "test:update": "jest --updateSnapshot"
   },
   "keywords": [],
   "author": "",
@@ -23,6 +27,7 @@
     "src/**/*.ts?(x)": [
       "prettier --write",
       "eslint --fix",
+      "jest --bail --findRelatedTests",
       "git add"
     ],
     "src/**/*.less": [
