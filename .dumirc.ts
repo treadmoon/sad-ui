@@ -6,7 +6,7 @@ let publicPath: string | undefined;
 
 // Github Pages 部署时需要更换为自己的仓库名
 if (process.env.NODE_ENV === 'production' && process.env.PREVIEW !== '1') {
-  base = '/sad-ui/';
+  base = '/sad-ui';
   publicPath = '/sad-ui/';
 }
 
